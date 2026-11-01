@@ -1,0 +1,21 @@
+# SpatialMind direct dependencies; tested with Python 3.11 on Windows.
+# Install CUDA PyTorch first (official PyTorch 2.6.0 CUDA 12.6 wheels):
+#   python -m pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu126
+# Install the matching ms-swift source checkout separately:
+#   python -m pip install -e ../ms-swift-main
+# Then install this file and check dependencies:
+#   python -m pip install -r requirements.txt
+#   python -m pip check
+# The tested local ms-swift source reports 4.7.0.dev0. Its archive has no Git
+# metadata, so preserve that source snapshot for exact reproduction.
+# Run project commands with PYTHONNOUSERSITE=1 and python -s to avoid a
+# user-site CPU-only torch shadowing this environment's CUDA torch.
+
+datasets==4.8.4
+gradio==6.31.0
+modelscope==1.40.2
+Pillow==12.3.0
+transformers==5.2.0
+accelerate==1.15.0
+peft==0.20.0
+safetensors==0.8.0

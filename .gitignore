@@ -1,0 +1,36 @@
+# Generated experiments and local datasets
+/output/
+/data/images/
+/data/raw/
+/models/
+/checkpoints/
+
+# Model and training weights
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Local logs and editor files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
